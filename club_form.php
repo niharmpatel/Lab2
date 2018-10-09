@@ -4,7 +4,7 @@ $ground = null;
 $club_id = null;
 if (!empty($_GET['club_id'])) {
     $club_id=$_GET['club_id'];
-    $db = new PDO('mysql:host=localhost;dbname=lab', 'root', '1234');
+    //$db = new PDO('mysql:host=localhost;dbname=lab', 'root', '1234');
     $db = new PDO('mysql:host=aws.computerstudi.es;dbname = gc200396470', 'gc200396470', 'gU7vAlAkOm');
     $sql = "SELECT * FROM clubs WHERE club_id= :club_id";
     $cmd = $db->prepare($sql);
