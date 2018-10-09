@@ -23,12 +23,13 @@ if (empty($ground)){
 
 if ($ok){
     $db = new PDO('mysql:host=localhost;dbname=lab','root','1234');
+    $db = new PDO('mysql:host=aws.computerstudi.es;dbname = gc200396470', 'gc200396470', 'gU7vAlAkOm');
 
     if (empty($club_id)){
         $sql = "INSERT INTO clubs (club_name, ground) VALUES (:club_name, :ground)";
     }
     else{
-        $sql = "UPDATE clubs SET club_name = :club_name, ground = :ground WHERE club_id=:club_id";
+        $sql = "UPDATE clubs SET club_name =:club_name, ground =:ground WHERE club_id=:club_id";
     }
 
     $cmd =$db->prepare($sql);
@@ -38,6 +39,7 @@ if ($ok){
     if (!empty($club_id)){
         $cmd->bindParam(':club_id',$club_id,PDO::PARAM_INT);
     }
+
     $cmd->execute();
 
     $db= null;
