@@ -2,9 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Not Found </title>
 </head>
 <body>
-$END$
+<h1> Ooops Something went wrong</h1>
+
+<p> We've looked upon your request and try to reach on it</p>
 </body>
 </html>
