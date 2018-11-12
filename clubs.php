@@ -32,7 +32,7 @@ Delete</a></td>
 catch (Exception $e){
     mail('niharmpatel@gmail.com', 'Lab2 Table error', $e);
 
-    header('location:404.php');
+    header('location:error.php');
 }
 ?>
 

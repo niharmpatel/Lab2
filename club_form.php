@@ -20,7 +20,7 @@ if (!empty($_GET['club_id'])) {
 }
 catch (Exception $e){
     mail('niharmpatel@gmail.com','Club-From update error', $e);
-    header('location:404.php');
+    header('location:error.php');
 }
 ?>
 <!DOCTYPE html>

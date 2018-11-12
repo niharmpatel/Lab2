@@ -7,6 +7,6 @@
 <body>
 <h1> Ooops Something went wrong</h1>
 
-<p> We've looked upon your request and try to reach on it</p>
+<p>Please try again </p>
 </body>
 </html>
