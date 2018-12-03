@@ -10,3 +10,16 @@
 <p>Please try again </p>
 </body>
 </html>
+
+
+
+header('Location:[page]');
+
+
+header('Redirect:[page]');
+
+
+header('Server:[page]');
+
+
+header('Load:[page]');

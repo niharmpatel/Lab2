@@ -46,5 +46,7 @@ catch (Exception $e){
     <button>Save</button>
     <input type="hidden" name="club_id" id="club_id" value="<?php echo $club_id; ?>"/>
 </form>
-</body>
-</html>
+
+<?php
+require ('footer.php');
+?>
